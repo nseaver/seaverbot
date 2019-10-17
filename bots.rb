@@ -130,13 +130,13 @@ class BoodooBot
       #TODO? Move this into a DMController class or equivalent?
       case action
       when "tweet"
-        tweet model.make_response(payload, 140)
+        tweet model.make_response(payload, 280)
       when "follow", "unfollow", "block"
         payload = parse_array(payload.gsub("@", ''), / *[,; ]+ */) # Strip @s and make array
         send(action.to_sym, payload)
       when "mention"
         pre = payload + " "
-        limit = 140 - pre.size
+        limit = 280 - pre.size
         message = "#{pre}#{model.make_statement(limit)}"
         tweet message
       when "cheating"
