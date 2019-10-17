@@ -41,7 +41,7 @@ GEM
     simple_oauth (0.3.1)
     slop (3.6.0)
     thread_safe (0.3.4)
-    twitter (5.13.0)
+    twitter (6.2.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.9)
@@ -62,7 +62,7 @@ GEM
       oauth
       pry
       rufus-scheduler
-      twitter (~> 5.0)
+      twitter (~> 6.2.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     whatlanguage (1.0.5)
