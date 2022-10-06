@@ -1,12 +1,15 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.6)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     awesome_print (1.6.1)
     bloomfilter-rb (2.1.1)
       redis
     buftok (0.2.0)
     coderay (1.1.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (1.0.2)
     engtagger (0.2.0)
     equalizer (0.0.11)
@@ -21,8 +24,14 @@ GEM
       bloomfilter-rb (>= 2.1.1)
       whatlanguage (>= 1.0.0)
     htmlentities (4.3.3)
-    http (3.0)
+    http (3.0.0)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (>= 2.0.0.pre.pre2, < 3)
       http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
+    http-form_data (2.1.1)
     http_parser.rb (0.6.0)
     json (2.2.0)
     memoizable (0.4.2)
@@ -35,6 +44,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (5.0.0)
     redis (3.2.0)
     rufus-scheduler (3.0.9)
       tzinfo
@@ -44,7 +54,7 @@ GEM
     twitter (6.2.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
-      equalizer (0.0.11)
+      equalizer (= 0.0.11)
       faraday (~> 0.9.0)
       http (~> 3.0)
       http-form_data (~> 2.1.1)
@@ -67,6 +77,9 @@ GEM
       twitter (~> 6.2.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8.2)
     whatlanguage (1.0.5)
 
 PLATFORMS
